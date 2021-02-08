@@ -1,0 +1,49 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="shortcut icon", href="images/favicon.ico")
+        title Drum
+    body
+        .kits
+            .key(data-key='65')
+                p A
+                span clap
+            .key(data-key='83')
+                p S
+                span hihat
+            .key(data-key='68')
+                p D
+                span kick
+            .key(data-key='70')
+                p F
+                span openhat
+            .key(data-key='71')
+                p G
+                span boom
+            .key(data-key='72')
+                p H
+                span ride
+            .key(data-key='74')
+                p J
+                span snare
+            .key(data-key='75')
+                p K
+                span tom
+            .key(data-key='76')
+                p L
+                span tink
+
+
+        audio(data-key='65' src='sounds/clap.wav')
+        audio(data-key='83' src='sounds/hihat.wav')
+        audio(data-key='68' src='sounds/kick.wav')
+        audio(data-key='70' src='sounds/openhat.wav')
+        audio(data-key='71' src='sounds/boom.wav')
+        audio(data-key='72' src='sounds/ride.wav')
+        audio(data-key='74' src='sounds/snare.wav')
+        audio(data-key='75' src='sounds/tom.wav')
+        audio(data-key='76' src='sounds/tink.wav')
+
+    script(src="app.js" defer)

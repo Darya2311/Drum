@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: url("../images/crowd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  font-weight: bold; }
+  body p {
+    margin: 0;
+    padding: 0; }
+  body .kits {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    margin-top: 20%; }
+    body .kits .key {
+      width: 100px;
+      height: 80px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      background: transparent;
+      border: 5px solid #A07753;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all .07s ease;
+      text-transform: uppercase; }
+      body .kits .key:last-child {
+        margin-right: 0; }
+      body .kits .key p {
+        color: #104a64;
+        font-size: 40px; }
+      body .kits .key span {
+        color: white; }
+  body .playing {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem #104a64; }
